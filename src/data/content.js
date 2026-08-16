@@ -306,7 +306,7 @@ export const commitments = [
    --------------------------------------------------------------------- */
 export const customersShowcase = {
   eyebrow: 'Our customers',
-  heading: 'Names that don\u2019t take chances on infrastructure',
+  heading: 'Names that don\u2019t take chances on technology',
   sub: 'From global semiconductor and technology leaders to India\u2019s defence, aerospace and research institutions — organisations that vet their technology partners as carefully as their technology.',
   logos: [
     { name: 'Aegis', logo: '/customers/aegis.png' },
