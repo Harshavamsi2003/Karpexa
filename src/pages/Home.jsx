@@ -88,8 +88,15 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ---------- 3.5 Our customers ---------- */}
+      <section className="section section--sm" data-theme="tint">
+        <div className="container">
+          <CustomersShowcase />
+        </div>
+      </section>
+
       {/* ---------- 4. Sectors ---------- */}
-      <section className="section" data-theme="tint">
+      <section className="section" data-theme="light">
         <div className="aurora aurora--light aurora--faint" aria-hidden="true"><span /><span /><span /></div>
         <div className="container rel">
           <div className="s-head s-head--split reveal">
@@ -136,13 +143,6 @@ export default function Home() {
               </article>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* ---------- 6. Our customers ---------- */}
-      <section className="section" data-theme="light">
-        <div className="container">
-          <CustomersShowcase />
         </div>
       </section>
 
