@@ -1019,3 +1019,66 @@
     color: var(--azure);
   }
 }
+/* =====================================================================
+   HOME — Our Customers showcase (replaces the old ownership/"what you
+   keep" band). A calm, static grid — not a marquee like the OEM partner
+   wall — so it reads as a deliberate "trusted by" moment rather than a
+   duplicate of the scrolling logos above it on the same page.
+   ===================================================================== */
+.custgrid {
+  margin-top: clamp(36px, 4.4vw, 56px);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
+  gap: 14px;
+}
+.custcard {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 92px;
+  padding: 18px;
+  border: 1px solid var(--rule);
+  border-radius: var(--r-md);
+  background: var(--card-bg);
+  overflow: hidden;
+  transition: transform var(--t-mid) var(--ease), border-color var(--t-mid) var(--ease), box-shadow var(--t-mid) var(--ease);
+}
+.custcard::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0; top: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--azure), var(--violet), transparent);
+  background-size: 220% 100%;
+  opacity: 0.2;
+  animation: flowGradient 7s ease-in-out infinite;
+}
+.custcard:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-line);
+  box-shadow: var(--card-shadow);
+}
+.custcard:hover::after { opacity: 1; }
+.custcard img {
+  max-width: 100%;
+  max-height: 38px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.86;
+  filter: grayscale(0.1);
+  transition: opacity var(--t-mid) var(--ease), filter var(--t-mid) var(--ease);
+}
+.custcard:hover img {
+  opacity: 1;
+  filter: grayscale(0);
+}
+@media (max-width: 760px) {
+  .custgrid { grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 10px; }
+  .custcard { height: 76px; padding: 12px; }
+  .custcard img { max-height: 30px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .custcard::after { animation: none !important; opacity: 0.5; }
+}
