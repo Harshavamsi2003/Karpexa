@@ -173,10 +173,6 @@ export default function Contact() {
                   {brand.address.countryName}
                 </p>
               </div>
-              <div className="dlist__item">
-                <h3>Support desk</h3>
-                <p>Existing clients should use the service desk address in their agreement so the ticket is logged against the correct SLA.</p>
-              </div>
             </div>
 
             <div className="map-embed reveal">
