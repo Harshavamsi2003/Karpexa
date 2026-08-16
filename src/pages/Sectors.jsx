@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import PageHero from '../components/PageHero';
 import ContactCTA from '../components/ContactCTA';
+import CustomersShowcase from '../components/CustomersShowcase';
 import useReveal from '../hooks/useReveal';
 import { sectors } from '../data/content';
 
@@ -66,6 +67,12 @@ export default function Sectors() {
               <Link to="/capabilities" className="btn btn--line">Browse capabilities</Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="section" data-theme="tint">
+        <div className="container">
+          <CustomersShowcase />
         </div>
       </section>
 
