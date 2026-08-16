@@ -1,7 +1,7 @@
 import PageHero from '../components/PageHero';
 import { CapabilityGrid } from '../components/CardGrid';
 import ContactCTA from '../components/ContactCTA';
-import Partners from '../components/Partners';
+import CustomersShowcase from '../components/CustomersShowcase';
 import useReveal from '../hooks/useReveal';
 import { Link } from 'react-router-dom';
 
@@ -63,13 +63,9 @@ export default function AllCapabilities() {
         </div>
       </section>
 
-      <section className="section section--sm" data-theme="dark">
+      <section className="section section--sm" data-theme="light">
         <div className="container">
-          <div className="s-head s-head--center reveal">
-            <p className="eyebrow eyebrow--plain">Accreditations</p>
-            <h2>The platforms behind the work</h2>
-          </div>
-          <Partners />
+          <CustomersShowcase />
         </div>
       </section>
 
