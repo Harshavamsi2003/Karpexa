@@ -5,7 +5,7 @@ import Partners from '../components/Partners';
 import { CapabilityGrid, SectorGrid } from '../components/CardGrid';
 import ContactCTA from '../components/ContactCTA';
 import useReveal from '../hooks/useReveal';
-import { operatingModel, ownership, partnersIntro, ourWorkTeaser } from '../data/content';
+import { operatingModel, customersShowcase, partnersIntro, ourWorkTeaser } from '../data/content';
 
 export default function Home() {
   useReveal();
@@ -21,20 +21,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ---------- 2. Partners ---------- */}
-      <section className="section section--sm" data-theme="tint">
-        <div className="aurora aurora--faint" aria-hidden="true"><span /><span /><span /></div>
-        <div className="container rel">
-          <div className="s-head s-head--center reveal">
-            <p className="eyebrow eyebrow--accent">{partnersIntro.eyebrow}</p>
-            <h2>{partnersIntro.heading}</h2>
-            <p className="s-head__sub">{partnersIntro.sub}</p>
-          </div>
-          <Partners />
-        </div>
-      </section>
-
-      {/* ---------- 2.5 Our Work teaser ---------- */}
+      {/* ---------- 1.5 Our Work teaser ---------- */}
       <section className="section section--sm" data-theme="obsidian">
         <div className="aurora aurora--faint" aria-hidden="true"><span /><span /><span /></div>
         <div className="container rel">
@@ -59,6 +46,19 @@ export default function Home() {
               {ourWorkTeaser.cta} <span className="arw" aria-hidden="true">→</span>
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* ---------- 2. Partners ---------- */}
+      <section className="section section--sm" data-theme="tint">
+        <div className="aurora aurora--faint" aria-hidden="true"><span /><span /><span /></div>
+        <div className="container rel">
+          <div className="s-head s-head--center reveal">
+            <p className="eyebrow eyebrow--accent">{partnersIntro.eyebrow}</p>
+            <h2>{partnersIntro.heading}</h2>
+            <p className="s-head__sub">{partnersIntro.sub}</p>
+          </div>
+          <Partners />
         </div>
       </section>
 
@@ -138,24 +138,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ---------- 6. What you keep ---------- */}
+      {/* ---------- 6. Our customers ---------- */}
       <section className="section" data-theme="light">
         <div className="container">
-          <div className="s-head s-head--split reveal">
-            <div>
-              <p className="eyebrow eyebrow--accent">{ownership.eyebrow}</p>
-              <h2>{ownership.heading}</h2>
-            </div>
-            <p className="lead">{ownership.sub}</p>
+          <div className="s-head s-head--center reveal">
+            <p className="eyebrow eyebrow--accent">{customersShowcase.eyebrow}</p>
+            <h2>{customersShowcase.heading}</h2>
+            <p className="s-head__sub">{customersShowcase.sub}</p>
           </div>
 
-          <div className="spine">
-            {ownership.items.map((item, i) => (
-              <article className="spine__item reveal" key={item.name} style={{ '--i': i }}>
-                <span className="spine__node" aria-hidden="true" />
-                <h3 className="spine__name">{item.name}</h3>
-                <p className="spine__text">{item.text}</p>
-              </article>
+          <div className="custgrid">
+            {customersShowcase.logos.map((c, i) => (
+              <div className="custcard reveal" key={c.name} style={{ '--i': i }}>
+                <img src={c.logo} alt={`${c.name} logo`} loading="lazy" decoding="async" />
+              </div>
             ))}
           </div>
         </div>
