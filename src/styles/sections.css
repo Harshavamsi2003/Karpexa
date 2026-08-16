@@ -1027,8 +1027,9 @@
    ===================================================================== */
 .custgrid {
   margin-top: clamp(36px, 4.4vw, 56px);
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 14px;
 }
 .custcard {
@@ -1036,6 +1037,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 0 0 148px;
   height: 92px;
   padding: 18px;
   border: 1px solid var(--rule);
@@ -1075,8 +1077,8 @@
   filter: grayscale(0);
 }
 @media (max-width: 760px) {
-  .custgrid { grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 10px; }
-  .custcard { height: 76px; padding: 12px; }
+  .custgrid { gap: 10px; }
+  .custcard { flex-basis: calc(50% - 5px); height: 76px; padding: 12px; }
   .custcard img { max-height: 30px; }
 }
 @media (prefers-reduced-motion: reduce) {
