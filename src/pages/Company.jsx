@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import PageHero from '../components/PageHero';
 import ContactCTA from '../components/ContactCTA';
 import Partners from '../components/Partners';
+import CustomersShowcase from '../components/CustomersShowcase';
 import useReveal from '../hooks/useReveal';
 import { company, companyFacts, companyIntro, journey, values, commitments, principles, proof, partnersIntro } from '../data/content';
 
@@ -201,6 +202,13 @@ export default function Company() {
             </p>
           </div>
           <Partners />
+        </div>
+      </section>
+
+      {/* Our customers */}
+      <section className="section section--sm" data-theme="light">
+        <div className="container">
+          <CustomersShowcase />
         </div>
       </section>
 
