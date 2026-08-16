@@ -2,10 +2,11 @@ import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import AboutBand from '../components/AboutBand';
 import Partners from '../components/Partners';
+import CustomersShowcase from '../components/CustomersShowcase';
 import { CapabilityGrid, SectorGrid } from '../components/CardGrid';
 import ContactCTA from '../components/ContactCTA';
 import useReveal from '../hooks/useReveal';
-import { operatingModel, customersShowcase, partnersIntro, ourWorkTeaser } from '../data/content';
+import { operatingModel, partnersIntro, ourWorkTeaser } from '../data/content';
 
 export default function Home() {
   useReveal();
@@ -141,19 +142,7 @@ export default function Home() {
       {/* ---------- 6. Our customers ---------- */}
       <section className="section" data-theme="light">
         <div className="container">
-          <div className="s-head s-head--center reveal">
-            <p className="eyebrow eyebrow--accent">{customersShowcase.eyebrow}</p>
-            <h2>{customersShowcase.heading}</h2>
-            <p className="s-head__sub">{customersShowcase.sub}</p>
-          </div>
-
-          <div className="custgrid">
-            {customersShowcase.logos.map((c, i) => (
-              <div className="custcard reveal" key={c.name} style={{ '--i': i }}>
-                <img src={c.logo} alt={`${c.name} logo`} loading="lazy" decoding="async" />
-              </div>
-            ))}
-          </div>
+          <CustomersShowcase />
         </div>
       </section>
 
