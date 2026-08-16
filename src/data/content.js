@@ -17,7 +17,7 @@ export const brand = {
   full: 'Karpexa Technologies',
   legal: 'Karpexa Technologies Pvt. Ltd.',
   tagline: 'Engineering the systems your business runs on.',
-  email: 'hello@karpexa.com',
+  email: 'info@karpexa.com',
   phone: '+91 96067 51633',
   address: {
     line1: 'No. 1190/1, FD 191, 4th Floor',
