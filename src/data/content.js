@@ -127,30 +127,6 @@ export const about = {
    FIRST NINETY DAYS — what actually happens once you engage us.
    Kept concrete and forward-looking; no comparisons with anyone else.
    --------------------------------------------------------------------- */
-export const ownership = {
-  eyebrow: 'What you keep',
-  heading: 'Every engagement leaves something behind',
-  sub: 'Ownership is the point. Each of these is written as the work happens, handed over as we go, and stays yours whether we continue together or not.',
-  items: [
-    {
-      name: 'The estate register',
-      text: 'A single record of every device, licence, contract and dependency we find — maintained as things change, rather than rebuilt from scratch each time somebody asks.',
-    },
-    {
-      name: 'The architecture record',
-      text: 'Diagrams kept alongside the decisions behind them, so the reasoning for a design survives the people who happened to be in the room for it.',
-    },
-    {
-      name: 'The runbook library',
-      text: 'Written procedures for the things that break, in language an engineer who has never seen your estate could follow in the middle of the night.',
-    },
-    {
-      name: 'The service record',
-      text: 'A plain account of what happened, what changed and what we would do next — issued on a steady cycle, never padded to look busy.',
-    },
-  ],
-};
-
 /* ---------------------------------------------------------------------
    SECTORS
    --------------------------------------------------------------------- */
@@ -323,6 +299,36 @@ export const commitments = [
   { title: 'To the environment', text: 'Right-sized hardware, energy-aware architecture, certified e-waste channels and residual value returned to the client.' },
 ];
 
+/* ---------------------------------------------------------------------
+   CUSTOMERS SHOWCASE — dedicated section on Home (replaces the old
+   "What you keep" ownership band). The 17 logos previously duplicated
+   inside the partner marquee's "Our Customers" row now live only here.
+   --------------------------------------------------------------------- */
+export const customersShowcase = {
+  eyebrow: 'Our customers',
+  heading: 'Names that don\u2019t take chances on infrastructure',
+  sub: 'From global semiconductor and technology leaders to India\u2019s defence, aerospace and research institutions — organisations that vet their technology partners as carefully as their technology.',
+  logos: [
+    { name: 'Aegis', logo: '/customers/aegis.png' },
+    { name: 'Aon', logo: '/customers/aon.png' },
+    { name: 'C-DOT', logo: '/customers/c-dot.png' },
+    { name: 'Fortrea', logo: '/customers/fortrea.png' },
+    { name: 'HAL', logo: '/customers/hal.png' },
+    { name: 'Infineon', logo: '/customers/infineon.png' },
+    { name: 'ISRO ISTRAC', logo: '/customers/isro-istrac.png' },
+    { name: 'Jana Bank', logo: '/customers/jana-bank.png' },
+    { name: 'LG Soft India', logo: '/customers/lg-soft.png' },
+    { name: 'Marvell', logo: '/customers/marvell.png' },
+    { name: 'Qualcomm', logo: '/customers/qualcomm.png' },
+    { name: 'Radisys', logo: '/customers/radisys.png' },
+    { name: 'Rambus', logo: '/customers/rambus.png' },
+    { name: 'Tech Mahindra', logo: '/customers/tech-mahindra.png' },
+    { name: 'Toyota', logo: '/customers/toyota.png' },
+    { name: 'Toyota Boshoku', logo: '/customers/toyota-boshoku.png' },
+    { name: 'TVS Motor', logo: '/customers/tvs-motor.png' },
+  ],
+};
+
 /* How we operate — a signature band unique to the About page. */
 export const principles = [
   { n: '01', title: 'One team, end to end', text: 'The engineer who designs your estate is the engineer who deploys it and the engineer you reach when something needs attention. No relay, no lost context.' },
@@ -474,28 +480,6 @@ export const partnerGroups = [
       { name: 'Samsung Electronics', logo: P('samsung-electronics') },
       { name: 'Micron Technology', logo: P('micron-technology') },
       { name: 'Toshiba', logo: P('toshiba') },
-    ],
-  },
-  {
-    label: 'Our Customers',
-    items: [
-      { name: 'Aegis', logo: C('aegis') },
-      { name: 'Aon', logo: C('aon') },
-      { name: 'C-DOT', logo: C('c-dot') },
-      { name: 'Fortrea', logo: C('fortrea') },
-      { name: 'HAL', logo: C('hal') },
-      { name: 'Infineon', logo: C('infineon') },
-      { name: 'ISRO ISTRAC', logo: C('isro-istrac') },
-      { name: 'Jana Bank', logo: C('jana-bank') },
-      { name: 'LG Soft India', logo: C('lg-soft') },
-      { name: 'Marvell', logo: C('marvell') },
-      { name: 'Qualcomm', logo: C('qualcomm') },
-      { name: 'Radisys', logo: C('radisys') },
-      { name: 'Rambus', logo: C('rambus') },
-      { name: 'Tech Mahindra', logo: C('tech-mahindra') },
-      { name: 'Toyota', logo: C('toyota') },
-      { name: 'Toyota Boshoku', logo: C('toyota-boshoku') },
-      { name: 'TVS Motor', logo: C('tvs-motor') },
     ],
   },
 ];
