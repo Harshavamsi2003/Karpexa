@@ -10,7 +10,7 @@
 
 export { capabilities, getCapability } from '../pages/capabilities';
 
-export const SITE_URL = 'https://karpexa.com';
+export const SITE_URL = 'https://www.karpexa.com';
 
 export const brand = {
   name: 'Karpexa',
