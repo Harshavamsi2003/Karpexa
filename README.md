@@ -121,7 +121,7 @@ Everything is disabled under `prefers-reduced-motion: reduce`.
 
 ## Accessibility
 
-Skip link, semantic landmarks, keyboard-navigable menus with `aria-expanded`, focus-visible rings, labelled form fields, `aria-hidden` on decorative layers, and a colour palette checked for contrast on both light and dark surfaces.
+Skip link, semantic landmarks, keyboard-navigable menus with `aria-expanded`, focus-visible rings, labelled form fields, `aria-hidden` on decorative layers, and a colour palette checked for contrast on both light and dark surfaces...
 
 ---
 
