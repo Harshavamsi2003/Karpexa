@@ -1,6 +1,7 @@
 # Karpexa Technologies — website
 
-React 18 + Vite. Statically prerendered to real HTML for every URL, deployed on Vercel......
+React 18 + Vite. Statically prerendered to real HTML for every URL, deployed on Vercel
+
 
 ---
 
