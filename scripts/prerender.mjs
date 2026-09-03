@@ -25,6 +25,38 @@ const { routes, buildJsonLd, SITE_URL } = await import(
 
 const template = await fs.readFile(path.join(dist, 'index.html'), 'utf8');
 
+/* ---------------------------------------------------------------------
+   SITEMAP DATES  (lastmod)
+
+   <lastmod> tells Google when a page's CONTENT last changed. It must not
+   change on every deploy. If all sixteen URLs claim a new date every time
+   you push a CSS tweak, Google learns the field is meaningless and starts
+   ignoring it — which is the opposite of what a sitemap is for.
+
+   So the date is set by hand here instead of being generated.
+
+   WHEN TO EDIT THIS:
+     You rewrote real copy on a page  ->  update the date
+     You changed styling, fixed a bug,
+     adjusted layout, redeployed      ->  leave it alone
+
+   Format is YYYY-MM-DD. Never put a future date.
+   --------------------------------------------------------------------- */
+
+/* The date used for any page not listed in the overrides below. */
+const DEFAULT_LASTMOD = '2026-09-03';
+
+/* Per-page dates. Add an entry only when that one page's copy changes,
+   so the other fifteen keep their older, honest dates.
+   Example:
+     '/capabilities': '2026-09-10',
+     '/company': '2026-08-18', */
+const LASTMOD = {
+  // '/capabilities': '2026-09-10',
+};
+
+const lastmodFor = (route) => route.lastmod || LASTMOD[route.path] || DEFAULT_LASTMOD;
+
 const esc = (s = '') =>
   String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
@@ -57,10 +89,15 @@ function headFor(route) {
     .join('\n    ');
 }
 
+/* String.replace() treats $$, $&, $` and $' inside a replacement STRING as
+   special substitution codes, so a literal "$$" in a price, a title or any
+   body copy would silently come out as "$". Passing a FUNCTION instead
+   turns that off — whatever the function returns is inserted verbatim.
+   Do not change these two arrow functions back into plain strings. */
 function inject(route, appHtml) {
   return template
-    .replace(/<!--head-->[\s\S]*?<!--\/head-->/, headFor(route))
-    .replace('<!--app-->', appHtml);
+    .replace(/<!--head-->[\s\S]*?<!--\/head-->/, () => headFor(route))
+    .replace('<!--app-->', () => appHtml);
 }
 
 async function writePage(route, appHtml) {
@@ -93,14 +130,13 @@ const notFound = {
 await fs.writeFile(path.join(dist, '404.html'), inject(notFound, render('/404-not-found')), 'utf8');
 
 /* ---------- sitemap.xml ---------- */
-const today = new Date().toISOString().slice(0, 10);
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${routes
   .map(
     (r) => `  <url>
     <loc>${SITE_URL}${r.path === '/' ? '/' : r.path}</loc>
-    <lastmod>${today}</lastmod>
+    <lastmod>${lastmodFor(r)}</lastmod>
     <changefreq>${r.changefreq || 'monthly'}</changefreq>
     <priority>${r.priority || '0.6'}</priority>
   </url>`
@@ -123,4 +159,5 @@ Sitemap: ${SITE_URL}/sitemap.xml
 
 console.log(`\nPrerendered ${written.length} routes:`);
 written.forEach((w) => console.log(`  · ${w}`));
-console.log('  · 404.html\n  · sitemap.xml\n  · robots.txt\n');
+console.log('  · 404.html\n  · sitemap.xml\n  · robots.txt');
+console.log(`\nSitemap lastmod: ${DEFAULT_LASTMOD} (edit DEFAULT_LASTMOD / LASTMOD in scripts/prerender.mjs)\n`);
