@@ -100,6 +100,11 @@ export const data = {
     text: 'A job description and a start date are enough. We will tell you honestly whether the market supports it and what it will realistically cost.',
   },
 
+  serviceArea: {
+    text: 'We recruit from the Bengaluru market and know it well — which teams pay what, who is genuinely available, which claimed skills survive a technical screen. Placements run across the city, including HSR Layout, Koramangala, Whitefield and Electronic City, with remote and hybrid placements arranged for clients elsewhere in India.',
+    note: 'Bengaluru-focused sourcing; remote and hybrid placement across India.',
+  },
+
   seo: {
     title: 'IT Staffing & Tech Talent in Bengaluru | Karpexa',
     description:
