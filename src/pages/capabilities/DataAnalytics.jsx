@@ -100,15 +100,13 @@ export const data = {
     text: 'Every reporting problem starts with two people quoting different figures. Name the metric and we will show you how the definition gets settled.',
   },
 
-   // src/pages/capabilities/DataAnalytics.jsx
-seo: {
-  title: 'Data & Analytics Consulting in Bengaluru | Karpexa',
-  description:
-    'Data engineering and analytics from Bengaluru — warehouses, pipelines, BI dashboards and reporting that decision-makers actually use, built and maintained by the same team.',
-  keywords: 'data analytics company Bengaluru, BI consulting Bangalore, data engineering services Bengaluru, Power BI consultant India',
-},
-
-
+  seo: {
+    title: 'Data & Analytics Consulting in Bengaluru | Karpexa',
+    description:
+      'Data engineering and analytics from Bengaluru — warehouses, pipelines, BI dashboards and reporting that decision-makers actually use, built and maintained by the same team.',
+    keywords: 'data analytics company Bengaluru, BI consulting Bangalore, data engineering services Bengaluru, Power BI consultant India',
+  },
+};
 
 export default function DataAnalytics() {
   return <CapabilityLayout data={data} />;
