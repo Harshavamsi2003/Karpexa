@@ -100,6 +100,11 @@ export const data = {
     text: 'Almost no one knows. A short audit produces the real figure per page, and usually a straightforward way to cut it.',
   },
 
+  serviceArea: {
+    text: 'Print fleets need someone who can attend the device. We supply, service and meter-read across Bengaluru — HSR Layout, Koramangala, Whitefield, Electronic City, Outer Ring Road — and manage multi-city fleets across India through scheduled visits.',
+    note: 'On-site device service across Bengaluru; multi-city fleet management in India.',
+  },
+
   seo: {
     title: 'Managed Print Services in Bengaluru | Karpexa',
     description:
