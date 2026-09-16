@@ -100,6 +100,11 @@ export const data = {
     text: 'Every reporting problem starts with two people quoting different figures. Name the metric and we will show you how the definition gets settled.',
   },
 
+  serviceArea: {
+    text: 'Data work lives or dies on access to the people who understand the numbers. We run requirement sessions on site with Bengaluru clients — HSR Layout, Koramangala, Whitefield, Electronic City — and deliver builds remotely for organisations across India.',
+    note: 'Requirements and review sessions on site in Bengaluru; build and run remote.',
+  },
+
   seo: {
     title: 'Data & Analytics Consulting in Bengaluru | Karpexa',
     description:
