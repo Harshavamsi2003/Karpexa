@@ -100,13 +100,14 @@ export const data = {
     text: 'Name the equipment that stops the business when it fails. We will build the response times and spares holding around exactly that.',
   },
 
-  seo: {
-    title: 'IT AMC Services & Hardware Maintenance Contracts | Karpexa',
-    description:
-      'Annual maintenance contracts for IT hardware — comprehensive and labour-only AMC, resident engineers, preventive maintenance visits, spares pooling and multi-site coverage with committed response times.',
-    keywords: 'IT AMC services India, annual maintenance contract IT, hardware maintenance services, preventive maintenance IT, onsite IT support, data centre maintenance',
-  },
-};
+   // src/pages/capabilities/MaintenanceAMC.jsx
+seo: {
+  title: 'IT AMC Services in Bengaluru | Hardware Maintenance',
+  description:
+    'Annual maintenance contracts for IT hardware in Bengaluru and across India — comprehensive and labour-only AMC, resident engineers, preventive visits, spares pooling and committed response times.',
+  keywords: 'IT AMC services Bengaluru, annual maintenance contract Bangalore, computer AMC Bengaluru, server AMC Bangalore',
+},
+
 
 export default function MaintenanceAMC() {
   return <CapabilityLayout data={data} />;
