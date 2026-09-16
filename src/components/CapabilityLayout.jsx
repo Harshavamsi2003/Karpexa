@@ -204,6 +204,22 @@ export default function CapabilityLayout({ data }) {
         </div>
       </section>
 
+      {/* ---------- Where we deliver ----------
+          Visible location content supporting the city in the page title.
+          Optional: pages without data.serviceArea simply skip this block. */}
+      {data.serviceArea && (
+        <section className="section section--sm" data-theme="light">
+          <div className="container container--tight">
+            <div className="s-head reveal">
+              <p className="eyebrow eyebrow--accent">Where we deliver</p>
+              <h2>On site in Bengaluru, delivered across India</h2>
+            </div>
+            <p className="lead reveal">{data.serviceArea.text}</p>
+            <p className="reveal"><strong>{data.serviceArea.note}</strong></p>
+          </div>
+        </section>
+      )}
+
       {/* ---------- FAQ ---------- */}
       <section className="section" data-theme="light">
         <div className="container container--tight">
