@@ -211,11 +211,10 @@ const serviceLd = (c) => ({
 export const routes = [
   {
     path: '/',
-    title: 'Karpexa Technologies | End-to-End IT Services & Digital Infrastructure',
+    title: 'IT Services Company in Bengaluru | Karpexa Technologies',
     description:
-      'Karpexa Technologies delivers end-to-end IT — infrastructure, cloud, managed services, cyber security, data analytics, ERP and technology staffing — designed, deployed and operated by one accountable team.',
-    keywords:
-      'IT services company India, end to end IT solutions, managed IT services, cloud migration, cyber security services, IT infrastructure provider, digital transformation partner',
+      'IT services company in Bengaluru — infrastructure, cloud, managed IT, cyber security, data analytics, ERP and technology staffing, designed and operated by one accountable engineering team across India.',
+    keywords: 'IT services company Bengaluru, IT company Bangalore, managed IT services Bengaluru, IT infrastructure Bangalore, IT solutions provider India',
     priority: '1.0',
     changefreq: 'weekly',
     graph: [organizationLd, localBusinessLd, websiteLd, siteNavigationLd, {
@@ -229,10 +228,10 @@ export const routes = [
   },
   {
     path: '/capabilities',
-    title: 'IT Capabilities & Services | Karpexa Technologies',
+    title: 'IT Services & Capabilities in Bengaluru | Karpexa',
     description:
-      'Ten IT capabilities under one agreement — infrastructure, cloud, managed services, cyber security, data and analytics, digital workspace, ERP, staffing, AMC and managed print.',
-    keywords: 'IT services list, enterprise IT capabilities, IT solutions provider India, managed services and cloud',
+      'Ten IT capabilities delivered from Bengaluru — infrastructure, cloud, managed services, cyber security, data and analytics, digital workspace, ERP, staffing, AMC and managed print, bought one at a time.',
+    keywords: 'IT services Bengaluru, IT capabilities Bangalore, enterprise IT solutions Bengaluru, managed services and cloud India',
     priority: '0.9',
     changefreq: 'monthly',
     graph: [
@@ -269,10 +268,10 @@ export const routes = [
   })),
   {
     path: '/sectors',
-    title: 'Industries We Serve | IT for BFSI, Healthcare, Manufacturing & GCCs',
+    title: 'Industry IT Solutions in Bengaluru | BFSI, Healthcare, GCC',
     description:
-      'Sector-specific IT delivery for global capability centres, healthcare and life sciences, banking and financial services, manufacturing, automotive, retail, technology, media and startups.',
-    keywords: 'IT services for BFSI, healthcare IT services India, manufacturing IT solutions, GCC IT partner, retail IT infrastructure',
+      'Sector-specific IT delivery from Bengaluru for global capability centres, healthcare and life sciences, banking and financial services, manufacturing, automotive, retail, technology and startups.',
+    keywords: 'IT services for BFSI Bengaluru, healthcare IT services Bangalore, manufacturing IT solutions India, GCC IT partner Bengaluru, retail IT infrastructure Bangalore',
     priority: '0.8',
     changefreq: 'monthly',
     graph: [
@@ -287,11 +286,10 @@ export const routes = [
   },
   {
     path: '/our-work',
-    title: 'Our Work | GPU & AI Server Infrastructure, HPC and Government-Scale Storage',
+    title: 'GPU & AI Server Infrastructure Projects | Bengaluru',
     description:
-      'Karpexa builds GPU-accelerated AI servers, HPC platforms and high-capacity storage infrastructure for demanding technology, government, defence, aerospace and academic environments.',
-    keywords:
-      'GPU server infrastructure India, AI HPC infrastructure provider, high performance computing infrastructure, government storage infrastructure, defence research infrastructure, academic HPC storage',
+      'GPU-accelerated AI servers, HPC platforms and high-capacity storage built from Bengaluru for technology, government, defence, aerospace and academic organisations across India.',
+    keywords: 'GPU server infrastructure Bengaluru, AI server supplier Bangalore, HPC infrastructure India, enterprise storage Bengaluru, data centre projects Bangalore',
     priority: '0.75',
     changefreq: 'monthly',
     graph: [
@@ -310,10 +308,10 @@ export const routes = [
   },
   {
     path: '/company',
-    title: 'About Karpexa Technologies | Our Story, Values & Commitments',
+    title: 'About Karpexa | IT Services Company in Bengaluru',
     description:
-      'Karpexa Technologies is an engineering-led IT firm built for mid-sized organisations — senior engineers on every engagement, vendor-neutral advice and documentation you own.',
-    keywords: 'about Karpexa, IT consulting company Bengaluru, IT services company India, technology partner Bengaluru, IT services company profile',
+      'Karpexa Technologies is an engineering-led IT services company in Bengaluru, built for mid-sized organisations — senior engineers on every engagement, vendor-neutral advice and documentation you own.',
+    keywords: 'about Karpexa, IT consulting company Bengaluru, IT services company Bangalore, technology partner Bengaluru, IT company HSR Layout',
     priority: '0.7',
     changefreq: 'yearly',
     graph: [
@@ -323,10 +321,10 @@ export const routes = [
   },
   {
     path: '/contact',
-    title: 'Contact Karpexa Technologies | Talk to an Engineer',
+    title: 'Contact Karpexa | IT Services Company in Bengaluru',
     description:
-      'Start a conversation with Karpexa Technologies. Tell us where your technology is today and we will come back with a clear, practical next step — usually within one business day.',
-    keywords: 'contact IT services company, IT consulting enquiry India, Karpexa contact',
+      'Contact Karpexa Technologies in HSR Layout, Bengaluru. Tell us where your technology is today and we will come back with a clear, practical next step — usually within one business day.',
+    keywords: 'contact IT company Bengaluru, IT services enquiry Bangalore, IT support HSR Layout, Karpexa contact',
     priority: '0.7',
     changefreq: 'yearly',
     graph: [
