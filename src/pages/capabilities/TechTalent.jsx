@@ -100,13 +100,13 @@ export const data = {
     text: 'A job description and a start date are enough. We will tell you honestly whether the market supports it and what it will realistically cost.',
   },
 
-  seo: {
-    title: 'IT Staffing & Tech Talent Solutions | Contract & Managed Teams',
-    description:
-      'Technology staffing — contract engineers, contract-to-hire, managed delivery pods and permanent search, with technical screening done by engineers and full payroll compliance.',
-    keywords: 'IT staffing services India, technology staffing solutions, contract IT hiring, managed delivery teams, GCC staffing, tech recruitment',
-  },
-};
+// src/pages/capabilities/TechTalent.jsx
+seo: {
+  title: 'IT Staffing & Tech Talent in Bengaluru | Karpexa',
+  description:
+    'Technology staffing from Bengaluru — contract engineers, contract-to-hire, managed delivery pods and permanent search, with technical screening done by engineers rather than recruiters.',
+  keywords: 'IT staffing company Bengaluru, tech recruitment Bangalore, contract staffing Bengaluru, IT manpower services India',
+},
 
 export default function TechTalent() {
   return <CapabilityLayout data={data} />;
