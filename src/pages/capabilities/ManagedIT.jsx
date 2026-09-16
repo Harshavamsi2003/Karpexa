@@ -100,13 +100,12 @@ export const data = {
     text: 'Describe the tickets your team is tired of and the hours nobody wants to cover. We will propose a desk model that takes both off their plate.',
   },
 
-  seo: {
-    title: 'Managed IT Services & 24×7 Service Desk | Karpexa',
-    description:
-      'Outsourced IT operations — staffed service desk, 24×7 monitoring, server and network operations, change management and monthly service reporting with committed SLAs.',
-    keywords: 'managed IT services India, outsourced service desk, 24x7 IT monitoring, NOC services, IT operations management, managed services provider',
-  },
-};
+seo: {
+  title: 'Managed IT Services in Bengaluru | 24×7 Service Desk',
+  description:
+    'Outsourced IT operations for Bengaluru and pan-India businesses — staffed service desk, 24×7 monitoring, server and network operations, change management and monthly service reporting.',
+  keywords: 'managed IT services Bengaluru, IT support company Bangalore, outsourced IT Bengaluru, 24x7 service desk India',
+},
 
 export default function ManagedIT() {
   return <CapabilityLayout data={data} />;
