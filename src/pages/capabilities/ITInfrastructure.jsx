@@ -100,13 +100,13 @@ export const data = {
     text: 'Send us a rack photograph, a network diagram or simply the age of your oldest switch. We will tell you what is worth keeping and what is quietly becoming a risk.',
   },
 
-   seo: {
-  title: 'IT Infrastructure Services in Bengaluru | Karpexa',
-  description:
-    'IT infrastructure design, supply and commissioning in Bengaluru and across India — servers, storage, networking, structured cabling and data centre build, delivered by the engineers who run it afterwards.',
-  keywords: 'IT infrastructure company Bengaluru, server installation Bangalore, network setup Bengaluru, structured cabling Bangalore, data centre services India',
-},
-
+  seo: {
+    title: 'IT Infrastructure Services in Bengaluru | Karpexa',
+    description:
+      'IT infrastructure design, supply and commissioning in Bengaluru and across India — servers, storage, networking, structured cabling and data centre build, delivered by the engineers who run it afterwards.',
+    keywords: 'IT infrastructure company Bengaluru, server installation Bangalore, network setup Bengaluru, structured cabling Bangalore, data centre services India',
+  },
+};
 
 export default function ITInfrastructure() {
   return <CapabilityLayout data={data} />;
