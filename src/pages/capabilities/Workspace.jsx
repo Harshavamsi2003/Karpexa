@@ -100,6 +100,11 @@ export const data = {
     text: 'How long until they have a laptop, an account and everything they need to work? That answer usually tells us where to begin.',
   },
 
+  serviceArea: {
+    text: 'Device work needs hands. We handle imaging, deployment, onboarding and refresh cycles on site across Bengaluru — HSR Layout, Koramangala, Whitefield, Electronic City, Outer Ring Road — and coordinate courier-based device logistics for distributed teams elsewhere in India.',
+    note: 'On-site device handling in Bengaluru; logistics-based support nationwide.',
+  },
+
   seo: {
     title: 'Digital Workspace & Endpoint Management | Bengaluru',
     description:
