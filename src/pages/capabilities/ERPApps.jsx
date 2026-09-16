@@ -100,6 +100,11 @@ export const data = {
     text: 'Point to the spreadsheet that sits between two systems. Removing it is almost always the highest-return piece of work available.',
   },
 
+  serviceArea: {
+    text: 'ERP programmes need people in the building during design and user acceptance. We work on site with Bengaluru clients — HSR Layout, Koramangala, Whitefield, Electronic City — and travel to plant and branch locations across India for rollout and training.',
+    note: 'Design and UAT on site in Bengaluru; rollout travel across India.',
+  },
+
   seo: {
     title: 'ERP Implementation & Support in Bengaluru | Karpexa',
     description:
