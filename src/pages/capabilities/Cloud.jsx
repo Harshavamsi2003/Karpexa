@@ -100,6 +100,11 @@ export const data = {
     text: 'A single billing export tells us more than a discovery workshop. We will come back with where the spend is going and what we would change first.',
   },
 
+  serviceArea: {
+    text: 'Cloud work is largely remote, but migrations go better when the cutover conversations happen in a room. We run discovery and go-live planning on site for clients in Bengaluru — HSR Layout, Koramangala, Whitefield, Electronic City — and remotely for the rest of India.',
+    note: 'Assessment workshops on site in Bengaluru; migration and run-state delivered remotely.',
+  },
+
   seo: {
     title: 'Cloud Migration & Managed Cloud Services | Bengaluru',
     description:
