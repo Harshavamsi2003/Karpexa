@@ -101,13 +101,13 @@ export const data = {
     text: 'An audit observation, a failed questionnaire, a near miss. We will give you an honest read on the exposure and the shortest credible path to closing it.',
   },
 
-// src/pages/capabilities/Security.jsx
-seo: {
-  title: 'Cyber Security Services in Bengaluru | Karpexa',
-  description:
-    'Cyber security services in Bengaluru — security assessments, endpoint and network hardening, identity controls, monitoring and audit remediation for mid-sized Indian organisations.',
-  keywords: 'cyber security company Bengaluru, security audit Bangalore, VAPT services Bengaluru, ISO 27001 support Bangalore',
-},
+  seo: {
+    title: 'Cyber Security Services in Bengaluru | Karpexa',
+    description:
+      'Cyber security services in Bengaluru — security assessments, endpoint and network hardening, identity controls, monitoring and audit remediation for mid-sized Indian organisations.',
+    keywords: 'cyber security company Bengaluru, security audit Bangalore, VAPT services Bengaluru, ISO 27001 support Bangalore',
+  },
+};
 
 export default function Security() {
   return <CapabilityLayout data={data} />;
