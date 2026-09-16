@@ -101,6 +101,11 @@ export const data = {
     text: 'An audit observation, a failed questionnaire, a near miss. We will give you an honest read on the exposure and the shortest credible path to closing it.',
   },
 
+  serviceArea: {
+    text: 'Assessments and remediation run remotely; interviews, physical controls review and audit walkthroughs are done on site. We cover Bengaluru directly — HSR Layout, Koramangala, Whitefield, Electronic City — and travel for multi-site assessments across India.',
+    note: 'On-site assessment in Bengaluru; remote monitoring and remediation nationwide.',
+  },
+
   seo: {
     title: 'Cyber Security Services in Bengaluru | Karpexa',
     description:
