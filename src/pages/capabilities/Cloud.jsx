@@ -101,12 +101,12 @@ export const data = {
   },
 
   seo: {
-  title: 'Cloud Migration & Managed Cloud Services | Bengaluru',
-  description:
-    'Cloud migration and managed cloud services from Bengaluru — AWS and Azure assessment, migration, cost optimisation and ongoing operations for mid-sized organisations across India.',
-  keywords: 'cloud migration services Bengaluru, AWS consulting Bangalore, Azure partner Bengaluru, managed cloud services India',
-},
-
+    title: 'Cloud Migration & Managed Cloud Services | Bengaluru',
+    description:
+      'Cloud migration and managed cloud services from Bengaluru — AWS, Azure and Google Cloud assessment, migration, cost optimisation and ongoing operations for mid-sized organisations across India.',
+    keywords: 'cloud migration services Bengaluru, AWS consulting Bangalore, Azure partner Bengaluru, managed cloud services India',
+  },
+};
 
 export default function Cloud() {
   return <CapabilityLayout data={data} />;
