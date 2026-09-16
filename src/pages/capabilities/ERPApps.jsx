@@ -100,13 +100,13 @@ export const data = {
     text: 'Point to the spreadsheet that sits between two systems. Removing it is almost always the highest-return piece of work available.',
   },
 
-  seo: {
-    title: 'ERP & Business Application Services | Implementation & Integration',
-    description:
-      'ERP and business application consulting — platform selection, implementation, system integration, workflow automation, master data management and post go-live support.',
-    keywords: 'ERP implementation services India, ERP consulting, business application integration, CRM implementation, workflow automation, SAP Business One partner',
-  },
-};
+// src/pages/capabilities/ERPApps.jsx
+seo: {
+  title: 'ERP Implementation & Support in Bengaluru | Karpexa',
+  description:
+    'ERP and business application services in Bengaluru — platform selection, implementation, integration, workflow automation and post go-live support for manufacturing and services firms across India.',
+  keywords: 'ERP implementation Bengaluru, ERP consultant Bangalore, business application support India, ERP integration Bengaluru',
+},
 
 export default function ERPApps() {
   return <CapabilityLayout data={data} />;
