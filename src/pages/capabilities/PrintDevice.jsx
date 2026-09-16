@@ -100,13 +100,13 @@ export const data = {
     text: 'Almost no one knows. A short audit produces the real figure per page, and usually a straightforward way to cut it.',
   },
 
-  seo: {
-    title: 'Managed Print Services & IT Asset Lifecycle Management | Karpexa',
-    description:
-      'Managed print services and device lifecycle management — fleet optimisation, secure printing, device procurement and staging, device as a service, asset tracking and certified disposal.',
-    keywords: 'managed print services India, IT asset lifecycle management, device as a service, secure IT disposal, e-waste recycling certificate, print fleet optimisation',
-  },
-};
+// src/pages/capabilities/PrintDevice.jsx
+seo: {
+  title: 'Managed Print Services in Bengaluru | Karpexa',
+  description:
+    'Managed print services in Bengaluru — printer fleet supply, consumables, per-page billing, usage reporting and device lifecycle management for offices across India.',
+  keywords: 'managed print services Bengaluru, printer rental Bangalore, photocopier AMC Bengaluru, print management India',
+},
 
 export default function PrintDevice() {
   return <CapabilityLayout data={data} />;
