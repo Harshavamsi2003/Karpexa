@@ -100,6 +100,11 @@ export const data = {
     text: 'Name the equipment that stops the business when it fails. We will build the response times and spares holding around exactly that.',
   },
 
+  serviceArea: {
+    text: 'Response time is the entire product, so coverage is geographic. We hold committed on-site response across Bengaluru — HSR Layout, Koramangala, Whitefield, Electronic City, Outer Ring Road, Peenya — with spares held locally. Multi-site AMC across India is delivered through scheduled resident and visiting engineers.',
+    note: 'Local spares holding and committed response times across Bengaluru.',
+  },
+
   seo: {
     title: 'IT AMC Services in Bengaluru | Hardware Maintenance',
     description:
