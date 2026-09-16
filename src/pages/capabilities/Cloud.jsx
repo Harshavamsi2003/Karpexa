@@ -101,12 +101,12 @@ export const data = {
   },
 
   seo: {
-    title: 'Cloud Services & Migration | Google Cloud, AWS, Azure Partner — Karpexa',
-    description:
-      'Cloud landing zones, wave-planned migration, FinOps cost governance and managed day-two operations across Google Cloud, AWS and Microsoft Azure.',
-    keywords: 'cloud migration services, cloud landing zone, AWS consulting partner India, Google Cloud partner, Azure cloud services, FinOps cost optimisation',
-  },
-};
+  title: 'Cloud Migration & Managed Cloud Services | Bengaluru',
+  description:
+    'Cloud migration and managed cloud services from Bengaluru — AWS and Azure assessment, migration, cost optimisation and ongoing operations for mid-sized organisations across India.',
+  keywords: 'cloud migration services Bengaluru, AWS consulting Bangalore, Azure partner Bengaluru, managed cloud services India',
+},
+
 
 export default function Cloud() {
   return <CapabilityLayout data={data} />;
