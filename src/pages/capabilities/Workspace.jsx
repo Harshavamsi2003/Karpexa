@@ -100,13 +100,13 @@ export const data = {
     text: 'How long until they have a laptop, an account and everything they need to work? That answer usually tells us where to begin.',
   },
 
-  seo: {
-    title: 'Digital Workspace Services | Google Workspace, Microsoft 365 & MDM',
-    description:
-      'Digital workplace deployment and management — Google Workspace and Microsoft 365, identity and single sign-on, unified endpoint management, zero-touch onboarding and licence optimisation.',
-    keywords: 'digital workplace solutions, Google Workspace partner India, Microsoft 365 deployment, unified endpoint management, MDM services, zero touch onboarding',
-  },
-};
+seo: {
+  title: 'Digital Workspace & Endpoint Management | Bengaluru',
+  description:
+    'Managed digital workspace services in Bengaluru — laptop and device lifecycle, Microsoft 365, endpoint management, onboarding and offboarding for distributed Indian teams.',
+  keywords: 'endpoint management Bengaluru, Microsoft 365 support Bangalore, device management services India, laptop AMC Bengaluru',
+},
+
 
 export default function Workspace() {
   return <CapabilityLayout data={data} />;
