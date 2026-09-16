@@ -100,6 +100,11 @@ export const data = {
     text: 'Send us a rack photograph, a network diagram or simply the age of your oldest switch. We will tell you what is worth keeping and what is quietly becoming a risk.',
   },
 
+  serviceArea: {
+    text: 'Infrastructure work is physical, so proximity matters. Our engineers are based in Bengaluru and reach most of the city — HSR Layout, Koramangala, Whitefield, Electronic City, Outer Ring Road — within the working day for surveys, commissioning and cutover windows. Data centre and multi-site builds run across India from the same team.',
+    note: 'Racking, cabling and commissioning are done on site, not subcontracted.',
+  },
+
   seo: {
     title: 'IT Infrastructure Services in Bengaluru | Karpexa',
     description:
