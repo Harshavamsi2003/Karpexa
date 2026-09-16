@@ -100,14 +100,13 @@ export const data = {
     text: 'Name the equipment that stops the business when it fails. We will build the response times and spares holding around exactly that.',
   },
 
-   // src/pages/capabilities/MaintenanceAMC.jsx
-seo: {
-  title: 'IT AMC Services in Bengaluru | Hardware Maintenance',
-  description:
-    'Annual maintenance contracts for IT hardware in Bengaluru and across India — comprehensive and labour-only AMC, resident engineers, preventive visits, spares pooling and committed response times.',
-  keywords: 'IT AMC services Bengaluru, annual maintenance contract Bangalore, computer AMC Bengaluru, server AMC Bangalore',
-},
-
+  seo: {
+    title: 'IT AMC Services in Bengaluru | Hardware Maintenance',
+    description:
+      'Annual maintenance contracts for IT hardware in Bengaluru and across India — comprehensive and labour-only AMC, resident engineers, preventive visits, spares pooling and committed response times.',
+    keywords: 'IT AMC services Bengaluru, annual maintenance contract Bangalore, computer AMC Bengaluru, server AMC Bangalore',
+  },
+};
 
 export default function MaintenanceAMC() {
   return <CapabilityLayout data={data} />;
