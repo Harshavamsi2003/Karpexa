@@ -100,6 +100,11 @@ export const data = {
     text: 'Describe the tickets your team is tired of and the hours nobody wants to cover. We will propose a desk model that takes both off their plate.',
   },
 
+  serviceArea: {
+    text: 'The service desk runs remotely, but someone has to be able to walk to the rack. We hold on-site response capability across Bengaluru — HSR Layout, Koramangala, Whitefield, Electronic City, Outer Ring Road — with committed arrival times written into the contract. Remote operations cover client sites elsewhere in India.',
+    note: 'On-site response across Bengaluru; remote operations nationwide.',
+  },
+
   seo: {
     title: 'Managed IT Services in Bengaluru | 24×7 Service Desk',
     description:
