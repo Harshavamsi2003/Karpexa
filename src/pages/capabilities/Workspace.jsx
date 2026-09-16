@@ -100,13 +100,13 @@ export const data = {
     text: 'How long until they have a laptop, an account and everything they need to work? That answer usually tells us where to begin.',
   },
 
-seo: {
-  title: 'Digital Workspace & Endpoint Management | Bengaluru',
-  description:
-    'Managed digital workspace services in Bengaluru — laptop and device lifecycle, Microsoft 365, endpoint management, onboarding and offboarding for distributed Indian teams.',
-  keywords: 'endpoint management Bengaluru, Microsoft 365 support Bangalore, device management services India, laptop AMC Bengaluru',
-},
-
+  seo: {
+    title: 'Digital Workspace & Endpoint Management | Bengaluru',
+    description:
+      'Managed digital workspace services in Bengaluru — laptop and device lifecycle, Google Workspace and Microsoft 365, endpoint management, onboarding and offboarding for distributed Indian teams.',
+    keywords: 'endpoint management Bengaluru, Microsoft 365 support Bangalore, device management services India, laptop AMC Bengaluru',
+  },
+};
 
 export default function Workspace() {
   return <CapabilityLayout data={data} />;
