@@ -100,13 +100,13 @@ export const data = {
     text: 'Almost no one knows. A short audit produces the real figure per page, and usually a straightforward way to cut it.',
   },
 
-// src/pages/capabilities/PrintDevice.jsx
-seo: {
-  title: 'Managed Print Services in Bengaluru | Karpexa',
-  description:
-    'Managed print services in Bengaluru — printer fleet supply, consumables, per-page billing, usage reporting and device lifecycle management for offices across India.',
-  keywords: 'managed print services Bengaluru, printer rental Bangalore, photocopier AMC Bengaluru, print management India',
-},
+  seo: {
+    title: 'Managed Print Services in Bengaluru | Karpexa',
+    description:
+      'Managed print services in Bengaluru — printer fleet supply, consumables, per-page billing, usage reporting and device lifecycle management for offices across India.',
+    keywords: 'managed print services Bengaluru, printer rental Bangalore, photocopier AMC Bengaluru, print management India',
+  },
+};
 
 export default function PrintDevice() {
   return <CapabilityLayout data={data} />;
